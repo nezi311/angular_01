@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 export class ServerComponent 
 {
     // deklaracja zmiennych
-    server_id       : number = 10;
+    private server_id       : number = 10;
     server_status   : string = 'offline';
 
     // definicja funkcji 
