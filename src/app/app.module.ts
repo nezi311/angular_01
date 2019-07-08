@@ -1,21 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-// importowanie biblioteki formsmodule
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+//import { HttpModule } from '@angular/common/http';
+
 
 import { AppComponent } from './app.component';
+import { ServerComponent } from './server/server.component';
+import { ServersComponent } from './servers/servers.component';
 
 
-// trzeba tutaj tez dodać to co zaimportowalismy czyli forms module
+
 @NgModule({
   declarations: [
     AppComponent
+    ,ServerComponent
+    , ServersComponent
   ],
   imports: [
       BrowserModule
-    , FormsModule
+      ,FormsModule
+      //,HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, ServerComponent]
 })
 export class AppModule { }
